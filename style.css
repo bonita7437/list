@@ -1,30 +1,71 @@
 body {
   margin: 0;
-  background-image: url(/image/background.jpeg);
+  background-image: url(/image/violet.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 
 .container {
-  background-color: beige;
-  min-height: 100vh;
+  background-color: rgb(217, 203, 240);
+  min-height: 50vh;
+  width: 40vh;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 20px;
+  margin-top: 20vh;
+  margin-bottom: 20px;
+}
+
+.to-do {
+  color: beige;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.input-area {
+  padding-top: 30px;
+}
+
+#task-input {
+  width: 420px;
+  padding: 0.3em;
+  border: 1.5px solid beige;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#add-button {
+  background-color: transparent;
+  border: none;
+}
+
+#add-button i {
+  color: violet;
+  font-size: 1.5em;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+  padding-left: 7.6px;
 }
 
 .task-area {
-  border: 1px solid violet;
+  margin-top: 20px;
+  border: 2px solid beige;
+  border-radius: 4px;
 }
 
 .task-tabs {
   display: flex;
-  border-bottom: 1px solid violet;
+  border-bottom: 1px solid beige;
   position: relative;
 }
 
 .task-tabs div {
   padding: 1em;
+  cursor: pointer;
 }
 
 #under-line {
@@ -46,4 +87,15 @@ body {
 .task-done {
   text-decoration: line-through;
   background-color: gray;
+}
+
+.task button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#task-board .task {
+  padding: 1em;
+  border-bottom: 1px solid beige;
 }

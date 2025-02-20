@@ -16,20 +16,25 @@
   </head>
   <body>
     <div class="container">
-      <h1>To Do List</h1>
+      <h1 class="to-do">To Do List</h1>
 
       <section class="input-area">
-        <input type="text" id="task-input" />
-        <button id="add-button">+</button>
+        <input type="text" id="task-input" placeholder="할 일을 입력해주세요" />
+        <button id="add-button" disabled>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <span id="error-message" style="color: red; display: none"
+          >할 일을 입력해주세요!</span
+        >
       </section>
 
       <section class="task-area">
         <div class="task-tabs">
           <div id="under-line"></div>
 
-          <div>전체</div>
-          <div>진행중</div>
-          <div>종료</div>
+          <div id="all">전체</div>
+          <div id="ongoing">진행중</div>
+          <div id="done">종료</div>
         </div>
 
         <div id="task-board"></div>
